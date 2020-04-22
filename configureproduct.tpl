@@ -195,14 +195,14 @@ var _localLang = {
                                                 </div>
                                             </div>
                                         {elseif $configoption.optiontype eq 3}
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label for="inputConfigOption{$configoption.id}">{$configoption.optionname}</label>
                                                     <br />
                                                     <label>
                                                         <input type="checkbox" name="configoption[{$configoption.id}]" id="inputConfigOption{$configoption.id}" value="1"{if $configoption.selectedqty} checked{/if} />
                                                         {if $configoption.options.0.name}
-                                                            {$configoption.options.0.name}
+                                                            {$configoption.options.0.name} {$LANG.proMonat}
                                                         {else}
                                                             {$LANG.enable}
                                                         {/if}
