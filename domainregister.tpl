@@ -301,7 +301,7 @@
 
 <script>
 jQuery(document).ready(function() {
-    jQuery('.tld-filters a:first-child').click();
+    jQuery('.tld-filters a:*').click();
 {if $lookupTerm && !$captchaError}
     jQuery('#btnCheckAvailability').click();
 {/if}
